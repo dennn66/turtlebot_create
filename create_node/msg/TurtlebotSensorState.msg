@@ -75,8 +75,10 @@ uint8 song_number
 bool song_playing
 
 uint8 number_of_stream_packets
-int32 requested_velocity  # m/s
-int32 requested_radius  # m
-int32 requested_right_velocity  # m/s
-int32 requested_left_velocity  # m/s
+float64 requested_velocity  # m/s
+float64 requested_radius  # m
+float64 requested_right_velocity  # m/s
+float64 requested_left_velocity  # m/s
+int16 encoder_counts_left
+int16 encoder_counts_right
 

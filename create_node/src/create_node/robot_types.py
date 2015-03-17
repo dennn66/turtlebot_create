@@ -43,6 +43,6 @@ class RobotType(object):
 ROBOT_TYPES = {
     'create': RobotType('create', 57600, create_sensor_handler.CreateSensorHandler,
                         wheel_separation=0.26),
-    'roomba': RobotType('roomba', 115200, roomba_sensor_handler.RoombaSensorHandler,
+    'roomba': RobotType('roomba', 57600, roomba_sensor_handler.RoombaSensorHandler,
                         wheel_separation=0.235),
     }

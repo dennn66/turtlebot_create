@@ -187,12 +187,12 @@ RADIUS_TURN_IN_PLACE_CCW = 1
 RADIUS_STRAIGHT = 32768
 RADIUS_MAX = 2000
 
-VELOCITY_MAX = 500  # mm/s
+VELOCITY_MAX = 240 #500  # mm/s
 VELOCITY_SLOW = int(VELOCITY_MAX * 0.33)
 VELOCITY_FAST = int(VELOCITY_MAX * 0.66)
 
-MAX_WHEEL_SPEED = 500
-WHEEL_SEPARATION = 260  # mm
+MAX_WHEEL_SPEED = 240 #500
+WHEEL_SEPARATION = 235 #260  # mm
 
 SERIAL_TIMEOUT = 2  # Number of seconds to wait for reads. 2 is generous.
 START_DELAY = 5  # Time it takes the Roomba/Turtlebot to boot.

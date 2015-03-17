@@ -44,7 +44,7 @@ import robot_types
 
 class RoombaSensorHandler(object):
 
-  ROOMBA_PULSES_TO_M = 0.000445558279992234
+  ROOMBA_PULSES_TO_M = 0.000214776 #0.000445558279992234
     
   def __init__(self, robot):
     self._robot = robot
@@ -95,7 +95,6 @@ class RoombaSensorHandler(object):
        self.statis, ) = self._sensor_state_struct.unpack(buffer[0:80])
     except struct.error, e:
       raise roslib.message.DeserializationError(e)
-
     self.wall = bool(self.wall)
     self.cliff_left = bool(self.cliff_left)
     self.cliff_front_left = bool(self.cliff_front_left)
@@ -173,6 +172,9 @@ class RoombaSensorHandler(object):
     message.requested_radius, = self.requested_radius,
     message.requested_right_velocity = self.requested_right_velocity
     message.requested_left_velocity = self.requested_left_velocity
+    message.encoder_counts_left = self.encoder_counts_left
+    message.encoder_counts_right = self.encoder_counts_right
+
     return message
     
   def get_all(self, sensor_state):
