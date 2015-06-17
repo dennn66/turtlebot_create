@@ -44,7 +44,7 @@ import robot_types
 
 class RoombaSensorHandler(object):
 
-  ROOMBA_PULSES_TO_M = 0.000214776 #0.000445558279992234
+  ROOMBA_PULSES_TO_M = 0.000227866 #0.000445558279992234
     
   def __init__(self, robot):
     self._robot = robot

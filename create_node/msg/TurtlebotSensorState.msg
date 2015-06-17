@@ -79,6 +79,6 @@ float64 requested_velocity  # m/s
 float64 requested_radius  # m
 float64 requested_right_velocity  # m/s
 float64 requested_left_velocity  # m/s
-int16 encoder_counts_left
-int16 encoder_counts_right
+uint16 encoder_counts_left
+uint16 encoder_counts_right
 
